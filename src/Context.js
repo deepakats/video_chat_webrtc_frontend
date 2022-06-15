@@ -5,8 +5,7 @@ import Peer from 'simple-peer';
 const SocketContext = createContext();
 
 // const socket = io('http://localhost:5000');
-console.log('BACKEND_URL', process.env);
-const socket = io(process.env.NEXT_PUBLIC_API_URL);
+const socket = io('https://video-chat-webrtc-backend.vercel.app');
 
 const ContextProvider = ({ children }) => {
   const [callAccepted, setCallAccepted] = useState(false);

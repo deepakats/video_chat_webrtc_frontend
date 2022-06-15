@@ -5,6 +5,7 @@ import Peer from 'simple-peer';
 const SocketContext = createContext();
 
 // const socket = io('http://localhost:5000');
+console.log('BACKEND_URL', process.env.BACKEND_URL);
 const socket = io(process.env.BACKEND_URL);
 
 const ContextProvider = ({ children }) => {

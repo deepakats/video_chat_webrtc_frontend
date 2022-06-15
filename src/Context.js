@@ -6,7 +6,7 @@ const SocketContext = createContext();
 
 // const socket = io('http://localhost:5000');
 console.log('BACKEND_URL', process.env);
-const socket = io(process.env.PUBLIC_URL);
+const socket = io(process.env.NEXT_PUBLIC_API_URL);
 
 const ContextProvider = ({ children }) => {
   const [callAccepted, setCallAccepted] = useState(false);
